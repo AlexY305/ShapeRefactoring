@@ -1,10 +1,10 @@
 package shapes;
 
 class Circle extends Shape {
-    private final double radius;
+    private final double myRadius;
 
-    Circle(double radius) {
-        this.radius = radius;
+    Circle(double theRadius) {
+        myRadius = theRadius;
     }
 
     @Override
@@ -14,6 +14,6 @@ class Circle extends Shape {
 
     @Override
     public double getArea() {
-        return Math.PI * radius * radius;
+        return Math.PI * myRadius * myRadius;
     }
 }

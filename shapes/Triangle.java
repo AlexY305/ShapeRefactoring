@@ -1,12 +1,12 @@
 package shapes;
 
 class Triangle extends Shape {
-    private final double height;
-    private final double base;
+    private final double myHeight;
+    private final double myBase;
 
-    Triangle(double height, double base) {
-        this.height = height;
-        this.base = base;
+    Triangle(double theHeight, double theBase) {
+        myHeight = theHeight;
+        myBase = theBase;
     }
 
     @Override
@@ -16,6 +16,6 @@ class Triangle extends Shape {
 
     @Override
     public double getArea() {
-        return 0.5 * height * base;
+        return 0.5 * myHeight * myBase;
     }
 }

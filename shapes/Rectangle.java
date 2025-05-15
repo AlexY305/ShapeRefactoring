@@ -1,12 +1,12 @@
 package shapes;
 
 class Rectangle extends Shape {
-    private final double height;
-    private final double width;
+    private final double myHeight;
+    private final double myWidth;
 
-    Rectangle(double height, double width) {
-        this.height = height;
-        this.width = width;
+    Rectangle(double theHeight, double theWidth) {
+        myHeight = theHeight;
+        myWidth = theWidth;
     }
 
     @Override
@@ -16,6 +16,6 @@ class Rectangle extends Shape {
 
     @Override
     public double getArea() {
-        return height * width;
+        return myHeight * myWidth;
     }
 }

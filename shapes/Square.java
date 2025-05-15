@@ -1,10 +1,10 @@
 package shapes;
 
 class Square extends Shape {
-    private final double side;
+    private final double mySide;
 
-    Square(double side) {
-        this.side = side;
+    Square(double theSide) {
+        mySide = theSide;
     }
 
     @Override
@@ -14,6 +14,6 @@ class Square extends Shape {
 
     @Override
     public double getArea() {
-        return side * side;
+        return mySide * mySide;
     }
 }
